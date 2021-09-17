@@ -1,46 +1,48 @@
 /*Created by Guy Gufada*/
 
-body{
-	  background: rgba(214, 215, 218, 0.7);
+body {
+    background: rgba(214, 215, 218, 0.7);
 }
 
 .content {
-  max-width: 500px;
-  margin: auto;
-  background: white;
-  padding: 10px;
-  vertical-align: middle;
-  text-align: center;
-  border: 1px solid green;	
-  width: min-content;
-  border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid green;
+    width: min-content;
+    border-radius: 10px;
 }
 
 img {
     height: 120px;
-    width: 120px;  
+    width: 120px;
 }
 
-#grid {	
-	justify-content: center;
+#grid {
+    justify-content: center;
     width: 450px;
-    height: 450px;        
+    height: 450px;
 }
 
 .Pad {
     /*outline: 1px solid green;*/
     float: left;
     height: 150px;
-    width: 150px;    
+    width: 150px;
 }
 
 .Pad:hover {
-  background: rgba(0, 0, 0, 0.1); /* Black see-through */   
-  font-weight: 900;
+    background: rgba(0, 0, 0, 0.1);
+    /* Black see-through */
+    font-weight: 900;
 }
 
 
-footer{
-text-align: center;
+footer {
+    text-align: center;
 }
+
 /*Created by Guy Gufada*/
