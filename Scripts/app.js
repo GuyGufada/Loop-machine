@@ -1,4 +1,4 @@
-﻿////Created by Guy Gufada 
+////Created by Guy Gufada 
 
 //Storing list of sounds
 var SongsList = [{
@@ -49,7 +49,7 @@ var SongsList = [{
 ];
 
 var RecordedSongsList = []; //List of users recorded sounds
-var audio;
+var audio = audio = new Audio("2312");
 
 //initialize function to load the grid and buttons status
 function onloadFunction() {
@@ -83,12 +83,13 @@ function PlayFunction() {
     document.getElementById("Play").disabled = true;
     document.getElementById("Stop").disabled = false;
     var path;
+    //Play record sounds one after one
     for (let x in RecordedSongsList) {
-        path = "Files/" + SongsList[RecordedSongsList[x].id - 1].FileName + ".mp3";
-        audio = new Audio(path);
-        audio.play();
-        //wait(8000);
-        audio.stop();
+        setTimeout(function() {
+            path = "Files/" + SongsList[RecordedSongsList[x].id - 1].FileName + ".mp3";
+            audio = new Audio(path);
+            audio.play();
+        }, 8000 * x)
     }
 }
 
@@ -96,7 +97,7 @@ function StopFunction() {
     document.getElementById("Record").disabled = false;
     document.getElementById("Play").disabled = false;
     document.getElementById("Stop").disabled = true;
-    audio.stop();
+    audio.pause();
 }
 
 //Play sound file order by user selected , 
